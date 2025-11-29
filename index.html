@@ -6,18 +6,23 @@
     <title>Login Page</title>
 </head>
 <body>
-    Email: <input type="text" name="email" placeholder="Enter Email id"><br><br>
-    Password: <input type="password" name="password"><br><br>
-    <button>Login</button>
+    Email: <input type="text" id="email" placeholder="Enter Email id"><br><br>
+    Password: <input type="password" id="password"><br><br>
+    <button onclick="login()" id="btn">Login</button>
 
-</body>
-<script>
+    <script>
+        const email = document.getElementById("email");
+        const pswd = document.getElementById("password");
+
     function login() {
-        if(Email === 'admin@gmail.com' && Password === 'admin1234'){
+        if(email.value === 'admin@gmail.com' && pswd.value === 'admin1234'){
             window.alert("Login success");
+            alert("Login success");
         } else {
             window.alert("Wrong email or password");
+            alert("Wrong email or password");
         }
     }
 </script>
+</body>
 </html>
