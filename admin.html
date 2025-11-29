@@ -21,8 +21,27 @@
             <option value="available">Available</option>
             <option value="unavailable">Unavailable</option>
         </select></p>
-        <button id="fleet-btn">Fleet</button>
+        <button id="fleet-btn">Add Fleet</button>
     </div>
     </aside>
+    <script>
+        const imgUrl ="https://coding-platform.s3.amazonaws.com/dev/lms/tickets/5e80fcb6-3f8e-480c-945b-30a5359eb40e/JNmYjkVr3WOjsrbu.png";
+        let details = [];
+        function addDetails() {
+            let regno = document.getElementById("reg-no").value;
+            let cat = document.getElementById("category").value;
+            let dname = document.getElementById("driver").value;
+            let avail = document.getElementById("is-available").value;
+
+            let detail = {
+                regno,
+                cat,
+                dname,
+                avail,
+                imgUrl
+            }
+            details.push(detail);
+        }
+    </script>
 </body>
 </html>
